@@ -1,6 +1,5 @@
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font-family: monospace;
@@ -8,8 +7,9 @@ body {
   color: whitesmoke;
   text-align: center;
 }
-  h1 {
-  font-size: 4em;
+h1 {
+  margin-top: 75px;
+  font-size: 3.5em;
 }
 label {
   margin: 15px;
@@ -31,6 +31,11 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 55px;
+  background-color: #000001;
+  border-radius: 50px;
+  border: 1px solid darkred;
+  box-shadow: 0 0 48px darkred;
 }
 .paragraph {
   font-size: 1.5em;
@@ -43,15 +48,13 @@ ul {
   margin: 5px;
   height: 50px;
   width: 200px;
-  /* box-shadow: 0 0 8px rgba(218, 209, 209, 0.5); */
 }
 .kiss {
-  font-size: 5em;
+  font-size: 4.5em;
 }
 .react-calendar__navigation {
   display: flex;
   margin-bottom: 2em;
-  border: 1px solid red;
 }
 .react-calendar__month-view__weekdays {
   text-align: center;
@@ -59,11 +62,21 @@ ul {
 .container button {
   height: 50px;
   width: 150px;
-  background-color: whitesmoke;
+  color: #000001;
+  /* background-color: whitesmoke; */
   border: 1px solid darkred;
 }
+.container button:disabled {
+  background-color: lightgrey;
+  color: grey;
+}
+.container button:disabled:hover {
+  background-color: lightgrey;
+  color: grey;
+}
 .container button:hover {
-  background-color: darkred;
+  background-color: rgb(139, 0, 0);
+  color: whitesmoke
 }
 .calendar {
   display: flex;
@@ -83,4 +96,9 @@ ul {
 .react-calendar {
   font-size: 1.5em;
   /* border: 2px solid blue; */
+}
+.buttons-container {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
 }

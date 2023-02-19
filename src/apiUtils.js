@@ -1,4 +1,0 @@
-//create
-//read
-//update
-//delete
