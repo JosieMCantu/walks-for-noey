@@ -45,7 +45,7 @@ function FriendsContainer() {
     colors: ["#C0C0C0"],
   });
 
-  //console.log('Friends', friends);
+  console.log('Friends', friends);
 
   return (
     <div className='whole-container'>
