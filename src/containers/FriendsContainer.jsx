@@ -33,16 +33,17 @@ function FriendsContainer() {
   }
 
   useEffect(() => {
-    getFriends();
+    const response = getFriends();
+    setFriends(response);
   }, []);
   
   const handleSubmit = () => {
     console.log('Uploaded');
   }
 
-  // fairyDustCursor({
-  //   colors: ["#C0C0C0"],
-  // });
+  fairyDustCursor({
+    colors: ["#C0C0C0"],
+  });
 
   //console.log('Friends', friends);
 
