@@ -1,5 +1,6 @@
 html,
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: monospace;
@@ -7,22 +8,30 @@ body {
   color: whitesmoke;
   text-align: center;
 }
+a:link {
+  color: red;
+  text-decoration: none;
+}
+/* visited link */
+a:visited {
+  color: darkred;
+}
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
 h1 {
   margin-top: 75px;
   font-size: 3.5em;
 }
 label {
   margin: 15px;
-  font-size: 1.5em;
+  font-size: 1.75em;
+  /* border: 2px solid white; */
 }
 input {
   height: 50%;
   width: 100%;
-}
-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 ul {
   list-style: none;
@@ -37,14 +46,25 @@ ul {
   border: 1px solid darkred;
   box-shadow: 0 0 48px darkred;
 }
-.paragraph {
-  font-size: 1.5em;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 65%;
+  /* border: 2px solid yellow; */
 }
-.form {
-  width: 50%;
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  justify-content: center;
+  /* border: 2px solid blue; */
+}
+.paragraph {
+  font-size: 1.75em;
 }
 .button {
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 5px;
   height: 50px;
   width: 200px;
@@ -63,7 +83,6 @@ ul {
   height: 50px;
   width: 150px;
   color: #000001;
-  /* background-color: whitesmoke; */
   border: 1px solid darkred;
 }
 .container button:disabled {
@@ -83,22 +102,54 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 2px solid darkred; */
+  /* border: 2px solid white; */
 }
 .calendar-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 65%;
   align-items: center;
   padding-top: 50px;
   /* border: 2px solid greenyellow; */
 }
 .react-calendar {
   font-size: 1.5em;
+  width: 75%;
   /* border: 2px solid blue; */
 }
 .buttons-container {
   width: 400px;
   display: flex;
   justify-content: space-around;
+}
+.friends-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 650px;
+  height: auto;
+  margin: 20px 20px;
+  /* border: 2px solid hotpink; */
+}
+.friend-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000001;
+  color: whitesmoke;
+  width: 150px;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px darkred;
+  font-size: 1.25em;
+  /* border: 2px solid green; */
+}
+.friend-days {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  /* border: 2px solid green; */
 }

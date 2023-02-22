@@ -1,19 +1,31 @@
 import { supabase } from '../utils/supabase';
 
 //create
+
+export const makeFriends = async (obj) => {
+  await supabase
+    .from('friends')
+    .insert(obj)
+    .single();
+  window.location.reload();
+}
+
+
 //read
 
 export const getFriends = async () => {
-  try {
-    const { data, error } = await supabase.from("friends").select("*");
-    if (error) throw error;
-    if (data !== null) { 
-      console.log('DATA', data);
-    }
-  } catch (error) {
-    console.log(error.message);
-  }
+    const { data } = await supabase
+    .from('friends')
+    .select('*');
+    return data
 }
 
-//update
 //delete
+
+export const deleteFriend = async (id) => {
+  await supabase
+  .from('friends')
+  .delete()
+  .eq('id', id);
+  window.location.reload();
+}
