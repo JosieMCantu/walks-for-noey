@@ -92,9 +92,8 @@ function FriendsContainer() {
           </label>
           <label>🦇 Phone:
               <input type='text' value={phone === null ? '' : phone} onChange={(e) => setPhone(e.target.value)} />
-              <br/>
           </label>
-          <label>🌙 Note:<br/>
+          <label><br/>🌙 Note:<br/>
               <textarea rows="8" cols="50" type='text' value={note === null ? '' : note} onChange={(e) => setNote(e.target.value)} />
           </label>
         </form>
