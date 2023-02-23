@@ -119,7 +119,7 @@ function FriendsContainer() {
                   return <li key={date}>{date}</li>
                 })}
               </ul>
-              <p className='paragraph'>Thank you again!✨ Please wish me luck and send me positive energey. 🫶🏼</p>
+              <p className='paragraph'>Thank you again!✨ Please wish me luck and send me positive energy. 🫶🏼</p>
               <br/>
               <div className='buttons-container'>
                 <button className='button' style={{boxShadow: '0 0 108px grey'}}
