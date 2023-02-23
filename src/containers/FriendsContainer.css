@@ -24,15 +24,6 @@ h1 {
   margin-top: 75px;
   font-size: 3.5em;
 }
-label {
-  margin: 15px;
-  font-size: 1.75em;
-  /* border: 2px solid white; */
-}
-input {
-  height: 50%;
-  width: 100%;
-}
 ul {
   list-style: none;
 }
@@ -53,12 +44,35 @@ ul {
   width: 65%;
   /* border: 2px solid yellow; */
 }
+label {
+  height: 100%;
+  width: 50%;
+  font-size: 1.75em;
+  /* border: 2px solid white; */
+}
+input {
+  height: 100%;
+  width: 75%;
+  padding: 5px;
+}
 form {
   display: flex;
   flex-wrap: wrap;
-  width: 75%;
   justify-content: center;
-  /* border: 2px solid blue; */
+  width: 95%;
+  text-align: center;
+  /* border: 1px solid blue; */
+}
+.section-one {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+.section-two {
+  padding-top: 25px;
+  width: 75%;
+  /* border: 1px solid red; */
 }
 .paragraph {
   font-size: 1.75em;

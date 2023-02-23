@@ -84,18 +84,22 @@ function FriendsContainer() {
         <p className='paragraph' style={{border: '1px dotted whitesmoke', padding: '5px', borderRadius: '5px'}}>Some people have requested to keep Noey overnight. In this case, select the nights she'll stay with you and we can work out pickup/dropoff times, as well as any other details.
         </p>
         <form>
-          <label>🥀 Name:
-              <input type='text' value={name === null ? '' : name} onChange={(e) => setName(e.target.value)} />
-          </label>
-          <label>💀 Email:
-              <input type='text' value={email === null ? '' : email} onChange={(e) => setEmail(e.target.value)} />
-          </label>
-          <label>🦇 Phone:
-              <input type='text' value={phone === null ? '' : phone} onChange={(e) => setPhone(e.target.value)} />
-          </label>
-          <label><br/>🌙 Note:<br/>
-              <textarea rows="8" cols="50" type='text' value={note === null ? '' : note} onChange={(e) => setNote(e.target.value)} />
-          </label>
+          <section className='section-one'>
+              <label>🥀 Name:<br/>
+                  <input type='text' value={name === null ? '' : name} onChange={(e) => setName(e.target.value)} />
+              </label>
+              <label>💀 Email:<br/>
+                  <input type='text' value={email === null ? '' : email} onChange={(e) => setEmail(e.target.value)} />
+              </label>
+              <label>🦇 Phone:<br/>
+                  <input type='text' value={phone === null ? '' : phone} onChange={(e) => setPhone(e.target.value)} />
+              </label>
+          </section>
+          <section className='section-two'>
+              <label>🌙 Note:<br/>
+                  <textarea rows="8" cols="50" type='text' value={note === null ? '' : note} onChange={(e) => setNote(e.target.value)} />
+              </label>
+          </section>
         </form>
       </div>
       <div className='container'>
