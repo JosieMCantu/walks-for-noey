@@ -110,7 +110,7 @@ function FriendsContainer() {
                     value={day} 
                     onClickDay={(day) => onClickDay(day)} 
                     // these set the days that can be selected
-                    minDate={new Date(2023, 2, 6)}
+                    minDate={new Date(2023, 2, 5)}
                     maxDate={new Date(2023, 2, 31)}
                     tileDisabled={tileDisabled}
                     />
