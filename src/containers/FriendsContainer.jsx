@@ -79,7 +79,7 @@ function FriendsContainer() {
         <p className='paragraph'>Thank you for being open to helping Noey and I make it through this tough time. </p>
         <p className='paragraph'>♥️ We love you and are eternally grateful! ♥️</p>
         <p className='kiss'>💋</p>
-        <p className='paragraph'>It will be a huge relief to me knowing Noey is being looked after. She'll need either a long walk (30-45 minutes), a trip to the smol dog section of <a href="https://goo.gl/maps/82FtWAzMXzhW15gF6">Normandale dog park</a> for awhile or a ride to and from daycare at <a href="https://goo.gl/maps/PEoTjDXi7EcW5JwR6">Dogs in the City</a> (10:30am dropoff, 3:30pm pickup).</p>
+        <p className='paragraph'>It will be a huge relief to me knowing Noey is being looked after. She'll need either a long walk (30-45 minutes), a trip to the smol dog section of <a href="https://goo.gl/maps/82FtWAzMXzhW15gF6">Normandale dog park</a> for awhile or a ride to and from daycare (M-F only) at <a href="https://goo.gl/maps/PEoTjDXi7EcW5JwR6">Dogs in the City</a> (10:30am dropoff, 3:30pm pickup).</p>
         <p className='paragraph'>Enter your information below and select the days you will be available to be in charge of Noey.</p>
         <p className='paragraph' style={{border: '1px dotted whitesmoke', padding: '5px', borderRadius: '5px'}}>Some people have requested to keep Noey overnight. In this case, select the nights she'll stay with you and we can work out pickup/dropoff times, as well as any other details.
         </p>
