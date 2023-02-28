@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Calendar from 'react-calendar';
 import { getFriends, makeFriends, deleteFriend } from '../utils/api';
 import { fairyDustCursor } from "cursor-effects";
+import { useMediaQuery } from 'react-responsive';
 import './FriendsContainer.css';
 
 
@@ -68,10 +69,12 @@ function FriendsContainer() {
     colors: ["#C0C0C0"],
   });
 
+  const isMobile = useMediaQuery({query: '(min-device-width: 414px)',})
+
   if (loading) {
     return <h1>Loading...</h1>;
   }
-  
+
   return (
     <div className='whole-container'>
       <div className='form-container'>
@@ -97,11 +100,12 @@ function FriendsContainer() {
           </section>
           <section className='section-two'>
               <label>🌙 Note:<br/>
-                  <textarea rows="8" cols="50" type='text' value={note === null ? '' : note} onChange={(e) => setNote(e.target.value)} />
+                  <textarea rows="8" cols={isMobile ? "50" : "30"} type='text' value={note === null ? '' : note} onChange={(e) => setNote(e.target.value)} />
               </label>
           </section>
         </form>
       </div>
+
       <div className='container'>
         <div className='calendar'>
             <main className='calendar-container'>

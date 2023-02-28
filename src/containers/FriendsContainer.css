@@ -42,7 +42,7 @@ ul {
   flex-direction: column;
   align-items: center;
   width: 65%;
-  /* border: 2px solid yellow; */
+  /* border: 1px solid lightblue; */
 }
 label {
   height: 100%;
@@ -59,7 +59,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 95%;
+  /* width: 95%; */
   text-align: center;
   /* border: 1px solid blue; */
 }
@@ -71,7 +71,6 @@ form {
 }
 .section-two {
   padding-top: 25px;
-  width: 75%;
   /* border: 1px solid red; */
 }
 .paragraph {
@@ -92,6 +91,9 @@ form {
 }
 .react-calendar__month-view__weekdays {
   text-align: center;
+}
+.react-calendar__month-view__weekdays abbr {
+  text-decoration: none;
 }
 .container button {
   height: 50px;
@@ -116,26 +118,30 @@ form {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* border: 2px solid white; */
+  /* border: 1px solid hotpink; */
+  /* background-color: hotpink; */
 }
 .calendar-container {
   display: flex;
   flex-direction: column;
-  width: 65%;
   align-items: center;
+  width: 65%;
   padding-top: 50px;
-  /* border: 2px solid greenyellow; */
+  /* border: 1px solid greenyellow; */
+  /* background-color: greenyellow; */
 }
 .react-calendar {
   font-size: 1.5em;
   width: 75%;
-  /* border: 2px solid blue; */
+  /* border: 1px solid green; */
+  /* background-color: green; */
 }
 .buttons-container {
   width: 400px;
   display: flex;
   justify-content: space-around;
 }
+
 .friends-container {
   display: flex;
   flex-direction: row;
