@@ -32,11 +32,9 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 55px;
   background-color: #000001;
   border-radius: 50px;
   border: 1px solid darkred;
-  box-shadow: 0 0 48px darkred;
 }
 .form-container {
   display: flex;
