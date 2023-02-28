@@ -69,7 +69,7 @@ function FriendsContainer() {
     colors: ["#C0C0C0"],
   });
 
-  const isMobile = useMediaQuery({query: '(min-device-width: 414px)',})
+  const isMobile = useMediaQuery({query: '(min-device-width: 500px)',})
 
   if (loading) {
     return <h1>Loading...</h1>;
@@ -118,6 +118,7 @@ function FriendsContainer() {
                     maxDate={new Date(2023, 2, 31)}
                     tileDisabled={tileDisabled}
                     />
+              </main>
               <br/>
               <p className='paragraph'>
                 Yay! {name}, you've selected the following days to look after Noey:
@@ -127,7 +128,9 @@ function FriendsContainer() {
                   return <li key={date}>{date}</li>
                 })}
               </ul>
-              <p className='paragraph'>Thank you again!✨ Please wish me luck and send me positive energy. 🫶🏼</p>
+              <p className='paragraph'>✨✨ Thank you again ✨✨</p>
+              <p className='paragraph'>Please wish me luck and send me positive energy. 🫶🏼</p>
+
               <br/>
               <div className='buttons-container'>
                 <button className='button' style={{boxShadow: '0 0 108px grey'}}
@@ -135,7 +138,9 @@ function FriendsContainer() {
                 <button className='button' style={{boxShadow: '0 0 108px grey'}}
                 onClick={() => createFriend(name, email, phone, note, dayArray)}>🕸️ SUBMIT ME 🕸️</button>
               </div>
+
               <p className='kiss'>🧠</p>
+
               <div className = 'friends-container'>
                 {friends.map((friend) => {
                   return <ul key={friend.id} className='friend-card'>
@@ -148,7 +153,8 @@ function FriendsContainer() {
                   </ul>
                 })}
               </div>
-            </main>
+
+            
           </div>
       </div>
     </div>

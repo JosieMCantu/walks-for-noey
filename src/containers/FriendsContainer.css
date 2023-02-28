@@ -6,7 +6,6 @@ body {
   font-family: monospace;
   background-color: #000001;
   color: whitesmoke;
-  text-align: center;
 }
 a:link {
   color: red;
@@ -30,7 +29,9 @@ ul {
 .whole-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 55px;
   background-color: #000001;
   border-radius: 50px;
@@ -59,7 +60,6 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* width: 95%; */
   text-align: center;
   /* border: 1px solid blue; */
 }
@@ -84,6 +84,12 @@ form {
 }
 .kiss {
   font-size: 4.5em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .react-calendar__navigation {
   display: flex;
@@ -115,42 +121,42 @@ form {
 }
 .calendar {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  width: 65%;
   /* border: 1px solid hotpink; */
   /* background-color: hotpink; */
 }
 .calendar-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 65%;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
   padding-top: 50px;
   /* border: 1px solid greenyellow; */
   /* background-color: greenyellow; */
 }
+
 .react-calendar {
   font-size: 1.5em;
-  width: 75%;
+  width: 100%;
   /* border: 1px solid green; */
   /* background-color: green; */
 }
+/* fits inside the calendar-container */
 .buttons-container {
-  width: 400px;
   display: flex;
   justify-content: space-around;
+  align-self: center;
+  /* background-color: blue; */
 }
-
 .friends-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 650px;
   height: auto;
   margin: 20px 20px;
-  /* border: 2px solid hotpink; */
+  /* border: 1px solid hotpink; */
 }
 .friend-card {
   display: flex;
